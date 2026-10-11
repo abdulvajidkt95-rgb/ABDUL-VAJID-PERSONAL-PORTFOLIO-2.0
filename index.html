@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abdul Vajid K | Software Developer in the Making &amp; Ethical Hacker</title>
+<meta name="description" content="Portfolio of Abdul Vajid K: web development, Python, ethical hacking and security audits.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<div id="bar"></div>
+<div id="cur"></div>
+<div id="ring"><div class="rb"><span id="ringLabel"></span></div></div>
+
+<!-- Boot screen -->
+<div id="pre" aria-hidden="true">
+  <div class="boot">
+    <div class="boot-lines" id="bootLines"></div>
+  </div>
+  <div class="cnt" id="preNum">0</div>
+  <div class="pb" id="preBar"></div>
+</div>
+
+<!-- Navigation -->
+<nav id="nav" aria-label="Main">
+  <a href="#top" class="logo">VAJID<span>.</span></a>
+  <ul id="navLinks">
+    <li><a href="#about">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="ai-tools.html" class="ai-link"><i class="fas fa-wand-magic-sparkles"></i> AI Tools</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="right">
+    <a href="#contact" class="btn btn-gold btn-sm magnetic">Hire me</a>
+    <button id="menuBtn" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<main id="top">
+<!-- HERO -->
+<header class="hero" id="hero">
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div class="hero-grid" id="heroIn">
+    <div class="hero-copy">
+      <div class="avail fade-up"><i></i>Open to projects and opportunities</div>
+      <h1 id="hl" aria-label="Abdul Vajid K">
+        <span class="scr" aria-hidden="true" data-final="Abdul"></span>
+        <span class="scr" aria-hidden="true" data-final="Vajid K"></span>
+      </h1>
+      <p class="role fade-up d1">I am a <span id="typing-text"></span><span class="caret">|</span></p>
+      <p class="lead fade-up d2">Building secure, scalable digital experiences. Merging clean code with robust security thinking to create the web of tomorrow.</p>
+      <div class="cta-row fade-up d3">
+        <a href="#projects" class="btn btn-gold magnetic" data-cursor="Go">View work</a>
+        <a href="#contact" class="btn btn-line magnetic">Contact me</a>
+      </div>
+    </div>
+    <aside class="term fade-up d3" aria-label="About me, terminal style">
+      <div class="term-bar"><i></i><i></i><i></i><span>vajid@kali: ~</span></div>
+      <pre id="termBody" class="term-body"></pre>
+    </aside>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</header>
+
+<!-- MARQUEE -->
+<div class="marq-wrap" aria-hidden="true">
+  <div class="band" data-skew>
+    <div class="mt">
+      <span>HTML5 and CSS3<b></b>JavaScript<b></b>React.js<b></b>Python<b></b>Node.js<b></b>Git and GitHub<b></b>Docker<b></b></span>
+      <span>HTML5 and CSS3<b></b>JavaScript<b></b>React.js<b></b>Python<b></b>Node.js<b></b>Git and GitHub<b></b>Docker<b></b></span>
+    </div>
+  </div>
+  <div class="band alt" data-skew>
+    <div class="mt">
+      <span>Penetration testing<b></b>Ethical hacking<b></b>Network security<b></b>Vulnerability assessment<b></b>Kali Linux<b></b>Metasploit<b></b>Burp Suite<b></b></span>
+      <span>Penetration testing<b></b>Ethical hacking<b></b>Network security<b></b>Vulnerability assessment<b></b>Kali Linux<b></b>Metasploit<b></b>Burp Suite<b></b></span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT / SKILLS -->
+<section class="mani" id="mani-sec">
+  <p id="mani">I learn by building and breaking things the legal way. Every project teaches me how to write cleaner code and how attackers think, so what I ship is fast, useful and hard to exploit.</p>
+</section>
+
+<section class="skills" id="about">
+  <h2 class="sec-h" data-split>Skills and expertise</h2>
+  <div class="skill-grid">
+    <article class="skill tilt">
+      <i class="fas fa-code ico"></i>
+      <h3>Development</h3>
+      <ul class="tags"><li>HTML5/CSS3</li><li>JavaScript (ES6+)</li><li>React.js</li><li>Python</li><li>Node.js</li></ul>
+    </article>
+    <article class="skill tilt">
+      <i class="fas fa-shield-halved ico"></i>
+      <h3>Cybersecurity</h3>
+      <ul class="tags"><li>Penetration testing</li><li>Ethical hacking</li><li>Network security</li><li>Vulnerability assessment</li></ul>
+    </article>
+    <article class="skill tilt">
+      <i class="fas fa-terminal ico"></i>
+      <h3>Tools and ops</h3>
+      <ul class="tags"><li>Kali Linux</li><li>Metasploit</li><li>Burp Suite</li><li>Git/GitHub</li><li>Docker</li></ul>
+    </article>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2 class="sec-h" data-split>Featured projects</h2>
+  <div class="stack" id="stack">
+    <article class="pcard">
+      <div class="pinfo">
+        <span class="ptag">Web development</span>
+        <h3>Vaji's Store</h3>
+        <p>A cyber-gear storefront with a product catalog and a live shopping cart, built with vanilla JavaScript.</p>
+        <a href="ecommerce/index.html" class="plink magnetic" data-cursor="Open">Open the store <i class="fas fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="part art-store" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    </article>
+    <article class="pcard">
+      <div class="pinfo">
+        <span class="ptag">AI</span>
+        <h3>vaji's AI</h3>
+        <p>A chat assistant that answers questions about my work, plus a dashboard with prompt, image and file tools.</p>
+        <a href="ai-tools.html" class="plink magnetic" data-cursor="Open">Try the AI tools <i class="fas fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="part art-ai" aria-hidden="true"><div class="b b1"><i></i><i></i><i></i></div><div class="b b2"></div><div class="b b3"><i></i><i></i><i></i></div></div>
+    </article>
+    <article class="pcard">
+      <div class="pinfo">
+        <span class="ptag">Security</span>
+        <h3>VulnScanner</h3>
+        <p>A Python script for basic vulnerability scanning of local networks, made for learning and testing on systems I own.</p>
+        <a href="https://github.com/abdulvajidkt95-rgb" target="_blank" rel="noopener" class="plink magnetic" data-cursor="Open">See my GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="part art-radar" aria-hidden="true"><div class="sweep"></div><span class="r r1"></span><span class="r r2"></span><span class="r r3"></span><em class="blip bl1"></em><em class="blip bl2"></em><em class="blip bl3"></em></div>
+    </article>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <h2 class="sec-h" data-split>What I can do for you</h2>
+  <div class="svc-list" id="svcList">
+    <article class="svc open">
+      <button aria-expanded="true"><span class="t">Web development</span><span class="tag">Responsive and fast</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="body"><div>
+        <p>Responsive, high-performance websites tailored to your brand's specific needs.</p>
+        <ul class="chips"><li>HTML5/CSS3</li><li>JavaScript</li><li>React.js</li><li>Node.js</li></ul>
+      </div></div>
+    </article>
+    <article class="svc">
+      <button aria-expanded="false"><span class="t">Security audits</span><span class="tag">Find it before attackers do</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="body"><div>
+        <p>Security testing to identify and help patch vulnerabilities in systems you own or are authorized to test.</p>
+        <ul class="chips"><li>Penetration testing</li><li>Vulnerability assessment</li><li>Network security</li></ul>
+      </div></div>
+    </article>
+    <article class="svc">
+      <button aria-expanded="false"><span class="t">Software engineering</span><span class="tag">Idea to deployment</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="body"><div>
+        <p>Full-cycle development from architecture design to deployment and maintenance.</p>
+        <ul class="chips"><li>Python</li><li>Git/GitHub</li><li>Docker</li><li>APIs</li></ul>
+      </div></div>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="blob" aria-hidden="true"></div>
+  <h2 class="scr-block" aria-label="Let's build something secure.">
+    <span class="line" aria-hidden="true">Let's build</span>
+    <span class="line" aria-hidden="true">something secure.</span>
+  </h2>
+  <div class="contact-grid">
+    <ul class="c-info">
+      <li><span class="ci"><i class="fas fa-envelope"></i></span><div><h4>Email</h4><a href="mailto:abdulvajidkt95@gmail.com">abdulvajidkt95@gmail.com</a></div></li>
+      <li><span class="ci"><i class="fab fa-instagram"></i></span><div><h4>Instagram</h4><a href="https://instagram.com/vaji__zz" target="_blank" rel="noopener">@vaji__zz</a></div></li>
+      <li><span class="ci"><i class="fab fa-github"></i></span><div><h4>GitHub</h4><a href="https://github.com/abdulvajidkt95-rgb" target="_blank" rel="noopener">abdulvajidkt95-rgb</a></div></li>
+      <li><span class="ci"><i class="fas fa-location-dot"></i></span><div><h4>Location</h4><p>India</p></div></li>
+    </ul>
+    <form class="brief" id="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfRyCAX5QIPdmlKlyQsLzTFHQGtlXSGXbbC4zgmNBNG5DNtIg/formResponse" method="POST">
+      <div class="field"><input id="f-name" type="text" name="entry.1956710495" placeholder=" " required autocomplete="name"><label for="f-name">Your name</label></div>
+      <div class="field"><input id="f-mail" type="email" name="entry.1527616728" placeholder=" " required autocomplete="email"><label for="f-mail">Your email</label></div>
+      <div class="field"><textarea id="f-msg" name="entry.2100160004" rows="4" placeholder=" " required></textarea><label for="f-msg">Your message</label></div>
+      <button type="submit" class="btn btn-gold magnetic" id="sendBtn" data-cursor="Send">Send message</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="f-top">
+    <a class="f-mail" href="mailto:abdulvajidkt95@gmail.com">abdulvajidkt95@gmail.com</a>
+    <div class="f-links">
+      <a href="https://instagram.com/vaji__zz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/abdulvajidkt95-rgb" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+  <div class="fbig" id="fbig" aria-hidden="true"><span class="scr" data-final="VAJID"></span></div>
+  <div class="legal"><span>&copy; 2026 Abdul Vajid K. All rights reserved.</span><a href="#top">Back to top</a></div>
+</footer>
+
+<!-- Confirmation popup -->
+<div class="popup-overlay" id="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popTitle">
+  <div class="popup-content">
+    <div class="popup-icon"><i class="fas fa-circle-check"></i></div>
+    <h3 id="popTitle">Message sent</h3>
+    <p>Thank you for reaching out. I will get back to you shortly.</p>
+    <button class="btn btn-gold" id="popup-close">Close</button>
+  </div>
+</div>
+
+<!-- Floating AI widget -->
+<div id="ai-widget" class="ai-widget" title="Drag me, or click to chat" role="button" tabindex="0" aria-label="Open vaji's AI chat">
+  <div class="ai-widget-icon"><i class="fas fa-robot"></i></div>
+  <span class="ai-widget-text">vaji's AI</span>
+  <span class="ai-hint" id="aiHint">Ask me about Vajid</span>
+</div>
+
+<!-- Chat popup -->
+<div id="chat-popup" class="chat-popup" style="display:none" role="dialog" aria-label="Chat with vaji's AI">
+  <div class="chat-header">
+    <div class="chat-title">
+      <div class="bot-avatar-small"><i class="fas fa-robot"></i></div>
+      <span>vaji's AI</span>
+      <div class="status-indicator"><span class="status-dot"></span><span class="status-text">Online</span></div>
+    </div>
+    <button id="close-chat" aria-label="Close chat"><i class="fas fa-times"></i></button>
+  </div>
+  <div id="chat-body" class="chat-body">
+    <div class="message bot"><div class="message-content">Hi, I'm vaji's AI. Ask me about Abdul's projects, skills or how to contact him.</div></div>
+    <div class="suggest" id="suggest">
+      <button type="button" data-q="What projects has Abdul built?">Projects</button>
+      <button type="button" data-q="What are Abdul's skills?">Skills</button>
+      <button type="button" data-q="How can I contact Abdul?">Contact</button>
+    </div>
+  </div>
+  <div class="chat-footer">
+    <button id="voice-btn" class="voice-btn" title="Speak" aria-label="Speak your question"><i class="fas fa-microphone"></i></button>
+    <input type="text" id="popup-input" placeholder="Type a message..." maxlength="600" aria-label="Message">
+    <button id="popup-send" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+<script src="home.js"></script>
+</body>
+</html>
